@@ -50,7 +50,7 @@ func Connect(driver, connection, prefix string, verbose bool) Database {
 	//db.SetMaxIdleConns(30)
 
 	database := &gorp.DbMap{Db: db, Dialect: chooseDialect(driver)}
-	controlTrace(verbose, database)
+	//controlTrace(verbose, database)
 	return Database{db, database, prefix}
 }
 
