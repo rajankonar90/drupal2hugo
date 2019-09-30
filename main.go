@@ -78,10 +78,6 @@ func main() {
 		util.CheckErrFatal(err)
 	}
 
-	if !util.FileExists("content") {
-		fmt.Fprintln(os.Stderr, "There is no content directory here. Did you mean to try somewhere else?")
-		os.Exit(2)
-	}
 
 	// username:password@protocol(address)/dbname?param=value
 	db := model.Connect(*driver, *user+":"+*pass+"@tcp("+*host+":"+*port+")/"+*dbName, *prefix, *verbose)
