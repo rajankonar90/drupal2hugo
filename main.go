@@ -44,7 +44,7 @@ var prefix = flag.String("prefix", "drp_", "Drupal table prefix")
 var user = flag.String("user", "", "Drupal user (defaults to be the same as the Drupal database name)")
 var pass = flag.String("pass", "", "Drupal password (you will be prompted for the password if this is absent)")
 var host = flag.String("host", "localhost", "Mysql host")
-var port = flag.String("port", "88", "Mysql server port")
+var port = flag.String("port", "3306", "Mysql server port")
 var emvideoField = flag.String("emvideoField", "", "name of CCK field that holds emvideo data.")
 
 //var dir = flag.String("dir", "", "Run in directory")
