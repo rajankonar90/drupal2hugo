@@ -26,7 +26,7 @@ package main
 
 import (
 	"bufio"
-	model "github.com/fale/drupal2hugo/model"
+	model "github.com/rajankonar90/drupal2hugo/model"
 	util "github.com/fale/drupal2hugo/util"
 	"flag"
 	"fmt"
